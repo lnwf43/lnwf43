@@ -10,6 +10,7 @@
   .logo-default,
   .logo-white {
     width: 250px;
+    margin: 0;
   }
 
   .navbar-light .navbar-nav {
@@ -100,7 +101,12 @@
     }
   }
 }
-
+@media (max-width: 774px) {
+  .navigation .logo-default,
+  .navigation .logo-white {
+    width: 180px;
+  }
+}
 @media (max-width: 991px) {
   .navigation {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
@@ -153,6 +159,7 @@
 .navbar-brand {
   height: auto;
   padding: 8px 0;
+  margin: 0;
 }
 
 .navbar-brand h1 {

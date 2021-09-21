@@ -428,6 +428,7 @@ a:hover {
 .navigation .logo-default,
 .navigation .logo-white {
   width: 250px;
+  margin: 0;
 }
 .navigation .navbar-light .navbar-nav .nav-item .nav-link {
   color: #f7f7f8;
@@ -499,6 +500,12 @@ a:hover {
   padding-left: 12px;
 }
 
+@media (max-width: 774px) {
+  .navigation .logo-default,
+.navigation .logo-white {
+    width: 180px;
+  }
+}
 @media (max-width: 991px) {
   .navigation {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
@@ -535,6 +542,7 @@ a:hover {
 .navbar-brand {
   height: auto;
   padding: 8px 0;
+  margin: 0;
 }
 
 .navbar-brand h1 {
