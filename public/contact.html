@@ -140,7 +140,7 @@ End Fixed Navigation
             <div class="title text-center">
               <h2>Esperamos hablar contigo</h2>
               <p>
-                Si deseas saber más acerca de nuestros servicios y cómo podemos 
+                Si deseas saber más acerca de nuestros servicios y cómo podemos
                 ayudarte, no dudes en contactarnos.
               </p>
               <div class="border"></div>
@@ -151,9 +151,7 @@ End Fixed Navigation
           <!-- Contact Details -->
           <div class="contact-details col-md-6">
             <h3>Detalles de Contacto</h3>
-            <p>
-
-            </p>
+            <p></p>
             <ul class="contact-short-info">
               <li>
                 <i class="tf-ion-ios-home"></i>
@@ -167,6 +165,8 @@ End Fixed Navigation
                 <!-- <i class="tf-ion-android-globe"></i>
                 <span>Fax: +880-31-000-000</span>
               </li> -->
+              </li>
+
               <li>
                 <i class="tf-ion-android-mail"></i>
                 <span>Correo: info@digital-hook.com</span>
@@ -176,7 +176,9 @@ End Fixed Navigation
             <div class="social-icon">
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/digitalhookoficial/"><i class="tf-ion-social-facebook"></i></a>
+                  <a href="https://www.facebook.com/digitalhookoficial/"
+                    ><i class="tf-ion-social-facebook"></i
+                  ></a>
                 </li>
                 <li>
                   <a href="#"><i class="tf-ion-social-twitter"></i></a>
@@ -195,7 +197,7 @@ End Fixed Navigation
 
           <!-- Contact Form -->
           <div class="contact-form col-md-6">
-            <form id="contact-form" method="post" role="form">
+            <form id="send-contact" method="post" role="form">
               <div class="form-group">
                 <input
                   type="text"
@@ -203,6 +205,7 @@ End Fixed Navigation
                   class="form-control"
                   name="name"
                   id="name"
+                  required
                 />
               </div>
 
@@ -213,6 +216,7 @@ End Fixed Navigation
                   class="form-control"
                   name="email"
                   id="email"
+                  required
                 />
               </div>
 
@@ -223,6 +227,7 @@ End Fixed Navigation
                   class="form-control"
                   name="subject"
                   id="subject"
+                  required
                 />
               </div>
 
@@ -233,23 +238,18 @@ End Fixed Navigation
                   class="form-control"
                   name="message"
                   id="message"
+                  required
                 ></textarea>
               </div>
-
-              <div id="success" class="success">
-                Gracias. El cartero está en camino :)
-              </div>
-
-              <div id="error" class="error">
-                Lo siento, no sé qué pasó. Intenta más tarde :(
-              </div>
-              <div id="cf-submit">
-                <input
+              <div class="form-group" id="request-status"></div>
+              <div class="form-group">
+                <button
                   type="submit"
-                  id="contact-submit"
-                  class="btn btn-transparent"
-                  value="Enviar"
-                />
+                  id="btn-enviar-contact"
+                  class="btn btn-main"
+                >
+                  Enviar
+                </button>
               </div>
             </form>
           </div>
@@ -360,7 +360,61 @@ End Fixed Navigation
     <!-- Smooth Scroll js -->
     <script src="plugins/smooth-scroll/smooth-scroll.min.js"></script>
 
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
     <!-- Custom js -->
+    <script src="js/firebase.js"></script>
+    <script src="js/util.js"></script>
+    <script>
+      $(document).ready(function () {
+        /**
+         * Consulta a la base de datos
+         */
+        $('#send-contact').submit(function (event) {
+          event.preventDefault();
+          $('#btn-enviar-contact')
+            .attr('disabled', true)
+            .empty()
+            .prepend(`Enviando...`);
+          db.collection('contacts')
+            .add({
+              name: $('[name="name"]').val(),
+              email: $('[name="email"]').val(),
+              subject: $('[name="subject"]').val(),
+              message: $('[name="message"]').val(),
+              created: getDate(),
+            })
+            .then((response) => {
+              let name = $('[name="name"]').val().trim().split(' ')[0];
+              name = name[0].toUpperCase() + name.substring(1);
+              $('#request-status').append(`
+              <div class="alert alert-dismissible alert-primary">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Perfecto ${name}!</strong>Tu mensaja ha sido enviado correctamente, en breve nos pondremos en contacto.
+                        </div>`);
+              window.open('https://wa.me/59161152992', '_blank');
+              $('[name="name"]').val('');
+              $('[name="email"]').val('');
+              $('[name="subject"]').val('');
+              $('[name="message"]').val('');
+            })
+            .catch((error) =>
+              $('#request-status')
+                .append(`<div class="alert alert-dismissible alert-danger">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Lo siento. ${name}!</strong>Hubo un error vuelve a intentarlo.
+                        </div>`)
+            )
+            .finally(() =>
+              $('#btn-enviar-contact')
+                .attr('disabled', false)
+                .empty()
+                .text('Enviar')
+            );
+        });
+      });
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
