@@ -1,11 +1,9 @@
-
 /*=================================================================
   Footer section
 ==================================================================*/
 
-
 .top-footer {
-  background-color: #222222;
+  background-color: $primary-color;
   border-top: 1px solid #404040;
   padding: 100px 0 80px;
   h3 {
@@ -32,10 +30,10 @@
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: capitalize;
-    -webkit-transition: color .3s;
-    -moz-transition: color .3s;
-    -ms-transition: color .3s;
-    transition: color .3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    transition: color 0.3s;
     font-family: $primary-font;
     display: block;
     &:hover {
@@ -46,7 +44,7 @@
 
 .footer-bottom {
   text-align: center;
-  background-color: #1b1b1b;
+  background-color: $secondary-color;
   border-top: 1px solid #2c2c2c;
   padding: 30px 0;
   h5 {
