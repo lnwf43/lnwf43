@@ -37,6 +37,63 @@
     <link rel="stylesheet" href="plugins/slick/slick.css" />
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      /* .dropdown-submenu {
+        position: relative;
+      }
+
+      .dropdown-submenu a::after {
+        transform: rotate(-90deg);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+      }
+
+      .dropdown-submenu .dropdown-menu {
+        top: 0 !important;
+        left: 100% !important;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+      } */
+      .navigation .dropdown-item:hover {
+        background-color: #d1142d !important;
+      }
+
+      @media (min-width: 992px) {
+        .dropdown-menu .dropdown-toggle:after {
+          border-top: 0.3em solid transparent;
+          border-right: 0;
+          border-bottom: 0.3em solid transparent;
+          border-left: 0.3em solid;
+        }
+        .dropdown-menu .dropdown-menu {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .dropdown-menu li {
+          position: relative;
+        }
+        .nav-item .submenu {
+          display: none;
+          position: absolute;
+          left: 100%;
+          top: -7px;
+        }
+        .nav-item .submenu-left {
+          right: 100%;
+          left: auto;
+        }
+        .dropdown-menu > li:hover {
+          background-color: #d1142d;
+        }
+        .dropdown-menu > li:hover > .submenu {
+          display: block;
+        }
+      }
+    </style>
+
   </head>
 
   <body id="body">
@@ -96,11 +153,56 @@ Fixed Navigation
               <li class="nav-item">
                 <a class="nav-link" href="/portfolio.html">Portafolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/team.html">Equipo</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  Precios
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="desarrolloAMedida.html"> Desarrollo a medida </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Diseño Web &nbsp;
+                      <i class="tf-ion-android-arrow-dropright"></i>
+                    </a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="tiendasVirtuales.html"> Tiendas Virtuales</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="webEmpresarial.html"> Web Empresarial</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="marcaPersonal.html"> Marca Personal</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Marketing y Publicidad &nbsp;
+                      <i class="tf-ion-android-arrow-dropright"></i>
+                    </a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="paquete1.html"> Paquete 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="paquete2.html"> Paquete 2</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="paquete3.html"> Paquete 3</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pricing.html">Precios</a>
+                <a class="nav-link" href="/team.html">Equipo</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contact.html">Contáctanos</a>
@@ -584,7 +686,7 @@ Start Call To Action
                 <li><a href="/about.html">Acerca de nosotros</a></li>
                 <li><a href="/service.html">Servicios</a></li>
                 <li><a href="/portfolio.html">Portafolio</a></li>
-                <li><a href="/pricing.html">Precios</a></li>
+                
                 <li><a href="/team.html">Equipo</a></li>
                 <li><a href="/contact.html">Contácto</a></li>
               </ul>
