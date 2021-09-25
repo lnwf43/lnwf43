@@ -30,14 +30,14 @@
     p {
       color: $light;
       width: 50%;
-      margin-bottom: 20px
+      margin-bottom: 20px;
     }
 
     .btn-main {
       margin-right: 8px;
 
       &:hover {
-        opacity: .8;
+        opacity: 0.8;
       }
     }
   }
@@ -65,7 +65,7 @@
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 3px;
-      margin-bottom: 20px
+      margin-bottom: 20px;
     }
 
     .btn-main {
@@ -82,7 +82,6 @@
   z-index: -1;
 }
 
-
 .slider-item {
   background-size: cover;
   background-position: center center;
@@ -91,7 +90,7 @@
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -107,7 +106,7 @@
     transform: translateY(-50%);
   }
 
-  h1{
+  h1 {
     color: #fff;
     font-size: 60px;
     line-height: 70px;
@@ -161,12 +160,12 @@
   z-index: 9;
   height: 70px;
   width: 70px;
-  background: rgba($color: $primary-color, $alpha: .5);
+  background: rgba($color: $primary-color, $alpha: 0.5);
   color: #fff;
   border: 0;
   line-height: 70px;
   font-size: 35px;
-  transition: .2s ease;
+  transition: 0.2s ease;
   border-radius: 50%;
 
   &::before {
@@ -177,7 +176,7 @@
     background: transparent;
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
-    transition: .2s ease;
+    transition: 0.2s ease;
   }
 
   &::after {
@@ -188,7 +187,7 @@
     top: 50%;
     transform: translateY(-50%);
     background: #fff;
-    transition: .2s ease;
+    transition: 0.2s ease;
   }
 
   &:focus {
@@ -229,3 +228,14 @@
 }
 
 /* /slick arrows */
+
+// @media (max-width: 650px) {
+//   h1 {
+//     color: #fff;
+//     font-size: 30px;
+//     line-height: 40px;
+//     letter-spacing: 1px;
+//     font-weight: 500;
+//     margin-bottom: 20px;
+//   }
+// }
