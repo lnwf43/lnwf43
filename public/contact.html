@@ -508,18 +508,16 @@ End Fixed Navigation
               let name2 = name.trim().split(' ')[0];
               name2 = name2[0].toUpperCase() + name2.substring(1);
 
-              const text = `Hola, soy ${name2}. Con el siguiente asunto: ${subject}${
+              const text = `Hola, soy ${name2}.%0D%0ACon el siguiente asunto: ${subject}${
                 subject ? '.' : ''
-              } ============================== ${message} `;
+              }%0D%0A==================%0D%0A${message}`;
+
               $('#request-status').append(`
               <div class="alert alert-dismissible alert-primary">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
                             <strong>Perfecto ${name2}!</strong>Tu mensaja ha sido enviado correctamente.
                         </div>`);
-              window.open(
-                `https://api.whatsapp.com/send?phone=${phone}&text=${text}`,
-                '_blank'
-              );
+              window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
               $('[name="name"]').val('');
               $('[name="email"]').val('');
               $('[name="subject"]').val('');
