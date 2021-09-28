@@ -316,7 +316,7 @@ End Fixed Navigation
               <div class="form-group">
                 <input
                   type="text"
-                  placeholder="Nombre"
+                  placeholder="Nombre*"
                   class="form-control"
                   name="name"
                   id="name"
@@ -331,7 +331,6 @@ End Fixed Navigation
                   class="form-control"
                   name="email"
                   id="email"
-                  required
                 />
               </div>
 
@@ -342,14 +341,13 @@ End Fixed Navigation
                   class="form-control"
                   name="subject"
                   id="subject"
-                  required
                 />
               </div>
 
               <div class="form-group">
                 <textarea
                   rows="6"
-                  placeholder="Mensaje"
+                  placeholder="Mensaje*"
                   class="form-control"
                   name="message"
                   id="message"
@@ -488,39 +486,53 @@ End Fixed Navigation
          */
         $('#send-contact').submit(function (event) {
           event.preventDefault();
+          const name = $('[name="name"]').val() || '';
+          const email = $('[name="email"]').val() || '';
+          const subject = $('[name="subject"]').val() || '';
+          const message = $('[name="message"]').val() || '';
+
           $('#btn-enviar-contact')
             .attr('disabled', true)
             .empty()
             .prepend(`Enviando...`);
           db.collection('contacts')
             .add({
-              name: $('[name="name"]').val(),
-              email: $('[name="email"]').val(),
-              subject: $('[name="subject"]').val(),
-              message: $('[name="message"]').val(),
+              name,
+              email,
+              subject,
+              message,
               created: getDate(),
             })
             .then((response) => {
-              let name = $('[name="name"]').val().trim().split(' ')[0];
-              name = name[0].toUpperCase() + name.substring(1);
+              const phone = '59177544511';
+              let name2 = name.trim().split(' ')[0];
+              name2 = name2[0].toUpperCase() + name2.substring(1);
+
+              const text = `Hola, soy ${name2}. Con el siguiente asunto: ${subject}${
+                subject ? '.' : ''
+              } ============================== ${message} `;
               $('#request-status').append(`
               <div class="alert alert-dismissible alert-primary">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            <strong>Perfecto ${name}!</strong>Tu mensaja ha sido enviado correctamente, en breve nos pondremos en contacto.
+                            <strong>Perfecto ${name2}!</strong>Tu mensaja ha sido enviado correctamente.
                         </div>`);
-              window.open('https://wa.me/59161152992', '_blank');
+              window.open(
+                `https://api.whatsapp.com/send?phone=${phone}&text=${text}`,
+                '_blank'
+              );
               $('[name="name"]').val('');
               $('[name="email"]').val('');
               $('[name="subject"]').val('');
               $('[name="message"]').val('');
             })
-            .catch((error) =>
+            .catch((error) => {
+              console.log(error);
               $('#request-status')
                 .append(`<div class="alert alert-dismissible alert-danger">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
                             <strong>Lo siento. ${name}!</strong>Hubo un error vuelve a intentarlo.
-                        </div>`)
-            )
+                        </div>`);
+            })
             .finally(() =>
               $('#btn-enviar-contact')
                 .attr('disabled', false)
