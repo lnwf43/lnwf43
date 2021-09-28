@@ -91,7 +91,11 @@
         .dropdown-menu > li:hover > .submenu {
           display: block;
         }
+ 
       }
+
+      .detalle-valor{ display:inline-block; }
+
     </style>
   </head>
 
@@ -152,7 +156,7 @@ Fixed Navigation
               <li class="nav-item">
                 <a class="nav-link" href="/portfolio.html">Portafolio</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown active">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -214,7 +218,7 @@ Fixed Navigation
                   </li>
                 </ul>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="/team.html">Equipo</a>
               </li>
               <li class="nav-item">
@@ -234,7 +238,7 @@ End Fixed Navigation
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>Tiendas Virtuales</h2>
+            <h1>Tiendas Virtuales</h1>
             <!-- <ol class="breadcrumb header-bradcrumb">
               <li><a href="/index.html">Inicio</a></li>
               &nbsp;/&nbsp;
@@ -248,39 +252,83 @@ End Fixed Navigation
     <!--
 Start About Section
 ==================================== -->
-    <section class="about-2 section" id="about">
+    <section class="about-2 section about" id="about">
       <div class="container">
         <div class="row">
           <!-- section title -->
           <div class="col-12">
             <div class="title text-center">
               <h2>
-                Somos una agencia de Marketing digital, Diseño & Desarrollo Web
+                Ahora todos tus clientes están conectados
               </h2>
-              <p></p>
+              <p>
+                Tu tienda abierta las 24 horas, disponible para todo el mundo.
+              </p>
+              <p>
+                Deja de esperar y prepárate para recibir clientes.
+              </p>
               <div class="border"></div>
             </div>
           </div>
           <!-- /section title -->
 
           <div class="col-md-6">
-            <img src="images/about/about-2.png" class="img-fluid" alt="" />
+            <img src="images/about/ecommerce.jpg" class="img-fluid" alt=""/>
           </div>
           <div class="col-md-6">
             <ul class="checklist">
               <li>
-                Desarrollo de aplicaciones web y moviles a medida, bajo la
-                metodología Scrum.
+                Catálogo de productos con capacidad de hacer pedidos por WhatsApp
               </li>
-              <li>Desarrollo de Tiendas virtuales profesionales.</li>
               <li>
-                Creación de estrategías digitales para publicitar tu negocio.
+                Pagos por cuotas durante 3 y 6 meses
               </li>
-              <li>Soporte técnico en general.</li>
-              <li>Consultoría Web.</li>
+              <li>
+                Promociones pagadas en Facebook Ads ¡GRATIS!
+              </li>
+              <li>
+                Soporte técnico durante 3 meses ¡GRATIS!
+              </li>
+              <li>
+                Hosting y Dominio por un año ¡GRATIS!
+              </li>
+              <li>
+                Creación de Fanpage en Facebook ¡GRATIS!
+              </li>
+              <li>
+                Asesoramiento de WhatsApp Business ¡GRATIS!
+              </li>
+              <li>
+                Diseño adaptable a cualquier dispositivo
+              </li>
             </ul>
             <a href="portfolio.html" class="btn btn-main mt-20">Portafólio</a>
           </div>
+
+          <div class="col-md-6">
+            <h4>Contenido:</h4>
+            <ul class="feature-list">
+              <li>
+                <i class="tf-ion-android-checkmark-circle"></i> Página de aterrizaje
+              </li>
+              <li>
+                <i class="tf-ion-android-checkmark-circle"></i> Catálogo de productos
+              </li>
+              <li>
+                <i class="tf-ion-android-checkmark-circle"></i> Producto individual
+              </li>
+              <li>
+                <i class="tf-ion-android-checkmark-circle"></i> Páginas de Categorías
+              </li>
+              <li>
+                <i class="tf-ion-android-checkmark-circle"></i> Carrito de compras
+              </li>
+              <li>
+                <i class="tf-ion-android-checkmark-circle"></i> Pedidos por WhatsApp
+              </li>
+            </ul>
+          </div>
+
         </div>
         <!-- End row -->
       </div>
@@ -296,11 +344,9 @@ Start About Section
           <!-- section title -->
           <div class="col-12">
             <div class="title title-white text-center">
-              <h2>Our Greatest Plans</h2>
+              <h2>Nuestros Planes</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laudantium soluta deserunt eaque, est, quia hic odit sed
-                incidunt officiis quidem.
+                Encuentra el plan perfecto para tu negocio hecho para tu alcance
               </p>
               <div class="border"></div>
             </div>
@@ -312,31 +358,35 @@ Start About Section
             <div class="pricing-item">
               <!-- plan name & value -->
               <div class="price-title">
-                <h3>Basic</h3>
-                <strong class="value">$19</strong>
-                <p>Perfect for single freelancers who work by themselves</p>
+                <h3>E-commerce Basic</h3>
+                <strong class="value">Bs.570</strong><h5 class="detalle-valor" >/mes</h5>
+                <h5>durante 6 meses</h5>
+                <p>
+                  Bs.1100/mes durante 3 meses<br>
+                  Bs.3180 al contado
+                </p>
+                
               </div>
               <!-- /plan name & value -->
 
               <!-- plan description -->
               <ul>
-                <li><i class="tf-ion-ios-arrow-forward"></i> 1GB Disk Space</li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> 10 Email Account
-                </li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> Script Installer
-                </li>
-                <li><i class="tf-ion-ios-arrow-forward"></i> 1 GB Storage</li>
-                <li><i class="tf-ion-ios-arrow-forward"></i> 2 GB Bandwidth</li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> 24/7 Tech Support
-                </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Almacenamiento de 5 GB </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Ancho de Banda 250 GB</li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Hosting y Dominio por un año GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> 4 Campañas en Facebook GRATIS</li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Soporte por 3 meses GRATIS</li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Fanpage en Facebook GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> WhatsApp Business GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Certificado SSL/TLS GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Correos corporativos </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Subida de 20 productos </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> 20 dias habiles para la entrega </li>
               </ul>
               <!-- /plan description -->
 
               <!-- signup button -->
-              <a class="btn btn-main" href="#">Signup</a>
+              <a class="btn btn-main" href="https://bit.ly/3F0DdN6">Consultar plan por WhatsApp</a>
               <!-- /signup button -->
             </div>
           </div>
@@ -347,33 +397,35 @@ Start About Section
             <div class="pricing-item">
               <!-- plan name & value -->
               <div class="price-title">
-                <h3>Standard</h3>
-                <strong class="value">$39</strong>
-                <p>Suitable for small businesses with up to 5 employees</p>
+                <h3>E-commerce Standard</h3>
+                <strong class="value">Bs.670</strong><h5 class="detalle-valor">/mes</h5>
+                <h5>durante 6 meses</h5>
+                <p>
+                  Bs.1300/mes durante 3 meses<br>
+                  Bs.3780 al contado
+                </p>
+                
               </div>
               <!-- /plan name & value -->
 
               <!-- plan description -->
               <ul>
-                <li><i class="tf-ion-ios-arrow-forward"></i> 1GB Disk Space</li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> 50 Email Account
-                </li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> Script Installer
-                </li>
-                <li><i class="tf-ion-ios-arrow-forward"></i> 1 GB Storage</li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> 10 GB Bandwidth
-                </li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> 24/7 Tech Support
-                </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Almacenamiento de 10 GB </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Ancho de Banda 500 GB</li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Hosting y Dominio por un año GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> 6 Campañas en Facebook GRATIS</li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Soporte por 3 meses GRATIS</li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Fanpage en Facebook GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> WhatsApp Business GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Certificado SSL/TLS GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Correos corporativos </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Subida de 20 productos </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> 20 dias habiles para la entrega </li>
               </ul>
               <!-- /plan description -->
 
               <!-- signup button -->
-              <a class="btn btn-main" href="#">Signup</a>
+              <a class="btn btn-main" href="https://bit.ly/39LqHCZ">Consultar plan por WhatsApp</a>
               <!-- /signup button -->
             </div>
           </div>
@@ -384,38 +436,35 @@ Start About Section
             <div class="pricing-item">
               <!-- plan name & value -->
               <div class="price-title">
-                <h3>Enterprise</h3>
-                <strong class="value">$59</strong>
-                <p>Great for large businesses with more than 5 employees</p>
+                <h3>E-commerce Complete</h3>
+                <strong class="value">Bs.770</strong><h5 class="detalle-valor" >/mes</h5>
+                <h5>durante 6 meses</h5>
+                <p>
+                  Bs.1500/mes durante 3 meses<br>
+                  Bs.4380 al contado
+                </p>
+                
               </div>
               <!-- /plan name & value -->
 
               <!-- plan description -->
               <ul>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> Unlimited Disk Space
-                </li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> Unlimited Email
-                  Account
-                </li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> Script Installer
-                </li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> Unlimited Storage
-                </li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> Unlimited Bandwidth
-                </li>
-                <li>
-                  <i class="tf-ion-ios-arrow-forward"></i> 24/7 Tech Support
-                </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Almacenamiento de 15 GB </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Ancho de Banda 750 GB</li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Hosting y Dominio por un año GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> 8 Campañas en Facebook GRATIS</li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Soporte por 3 meses GRATIS</li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Fanpage en Facebook GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> WhatsApp Business GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Certificado SSL/TLS GRATIS </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Correos corporativos </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> Subida de 20 productos </li>
+                <li><i class="tf-ion-ios-checkmark-outline"></i> 20 dias habiles para la entrega </li>
               </ul>
               <!-- /plan description -->
 
               <!-- signup button -->
-              <a class="btn btn-main" href="#">Signup</a>
+              <a class="btn btn-main" href="https://bit.ly/3kOml4p">Consultar plan por WhatsApp</a>
               <!-- /signup button -->
             </div>
           </div>
