@@ -1,17 +1,30 @@
-
 /*=================================================================
   Testimonial section
 ==================================================================*/
 
 .testimonial {
   padding-top: 100px;
-  background: $primary-color;
+  background-image: linear-gradient(
+    to right top,
+    #131218,
+    #191729,
+    #1f1b3a,
+    #261f4c,
+    #2f225e,
+    #4c2567,
+    #68286d,
+    #832a71,
+    #a63a6a,
+    #c05362,
+    #d1715f,
+    #da9162
+  );
   position: relative;
   padding-bottom: 0px;
   margin-bottom: 80px;
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0%;
@@ -40,7 +53,7 @@
       display: inline-block;
       border-radius: 100%;
       width: 150px;
-      height:auto;
+      height: auto;
     }
   }
 }

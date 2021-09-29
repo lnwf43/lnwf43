@@ -3,7 +3,21 @@
 ==================================================================*/
 
 .top-footer {
-  background-color: $primary-color;
+  background-image: linear-gradient(
+    to right top,
+    #131218,
+    #191729,
+    #1f1b3a,
+    #261f4c,
+    #2f225e,
+    #4c2567,
+    #68286d,
+    #832a71,
+    #a63a6a,
+    #c05362,
+    #d1715f,
+    #da9162
+  );
   border-top: 1px solid #404040;
   padding: 100px 0 80px;
   h3 {
@@ -44,7 +58,7 @@
 
 .footer-bottom {
   text-align: center;
-  background-color: rgb(19, 18, 19);
+  background-color: #131218;
   border-top: 1px solid #2c2c2c;
   padding: 30px 0;
   h5 {

@@ -160,7 +160,22 @@
   z-index: 9;
   height: 70px;
   width: 70px;
-  background: rgba($color: $primary-color, $alpha: 0.5);
+  background-image: linear-gradient(
+    to right top,
+    #131218,
+    #191729,
+    #1f1b3a,
+    #261f4c,
+    #2f225e,
+    #4c2567,
+    #68286d,
+    #832a71,
+    #a63a6a,
+    #c05362,
+    #d1715f,
+    #da9162
+  );
+
   color: #fff;
   border: 0;
   line-height: 70px;
@@ -195,7 +210,21 @@
   }
 
   &:hover {
-    background: $primary-color;
+    background-image: linear-gradient(
+      to right,
+      #64208f,
+      #771b82,
+      #841a75,
+      #8d1e69,
+      #92265f,
+      #982a59,
+      #9e2e54,
+      #a2344e,
+      #ab3648,
+      #b43941,
+      #bb3d39,
+      #c0432f
+    );
   }
 }
 
