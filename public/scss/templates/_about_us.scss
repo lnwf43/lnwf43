@@ -3,9 +3,8 @@
 ==================================================================*/
 
 .about {
-  padding:100px 0;
-  background: $light;
-  
+  padding: 100px 0;
+  background: $color-background;
   .btn-about {
     background: $primary-color;
   }
@@ -17,7 +16,7 @@
     li {
       width: 48%;
       display: inline-block;
-      color: #666;
+      color: $semi-light;
       font-size: 13px;
       font-family: $secondary-font;
       margin-bottom: 5px;
@@ -30,25 +29,23 @@
   }
 }
 
-
 /*=================================================================
   About us 2 section
 ==================================================================*/
 .about-2 {
-  background: #F7F7F7;
   .checklist {
     padding-left: 30px;
     li {
       position: relative;
       margin-bottom: 15px;
       font-size: 16px;
-      color: #777;
+      color: rgb(212, 211, 211);
       font-family: $primary-font;
       &:before {
         position: absolute;
         margin-right: 12px;
         margin-left: -45px;
-        content: "\f375";
+        content: '\f375';
         font-family: $icon-font;
         opacity: 1;
         border-radius: 50%;

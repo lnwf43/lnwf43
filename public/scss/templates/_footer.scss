@@ -58,13 +58,13 @@
 
 .footer-bottom {
   text-align: center;
-  background-color: #131218;
+  background-color: $color-background;
   border-top: 1px solid #2c2c2c;
   padding: 30px 0;
   h5 {
     font-size: 12px;
     line-height: 1;
-    color: #888888;
+    color: #c2bebe;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -74,13 +74,15 @@
   h6 {
     font-size: 11px;
     line-height: 15px;
-    color: #888888;
+    color: #bdbdbd;
     font-weight: 400;
     text-transform: capitalize;
     letter-spacing: 2px;
     margin-bottom: 0;
   }
   a {
-    color: $primary-color;
+    font-weight: bold;
+    font-size: 0.7rem;
+    color: #d88a61;
   }
 }

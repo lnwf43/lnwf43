@@ -1,3 +1,8 @@
+body {
+  color: white;
+  background-size: cover;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAAAXNSR0IArs4c6QAAAXpJREFUOE9tVFtuwzAMo+SdoMt+sx6lj/sfKdZASq6ddgaKuIpMiaQc2y/3cDMgGsIPAA0RAEMdAPgqH3Dwfe7MTDu+GysiYNfvZyAs89DR+azMsAaPDljAzCs+EhagnrDmBrteHqGKAA7v6mx00RGwyE643E212ZYe7P5Qls6p69/tEZmUwVf7Bcv4POALSRYKdHUXymFB2zd2mEtSshpTqMeoEC46lZUAFJq/V//JoABXHomcx7PyC8paRjvjA2rmSMNJebFLmAv/t/8h56b7YyfAfXtKpfKp1K5/qYFiHC2pJZrcDD1H4YC5nzVMHfPgqT8FzqPTo9MGFRz51eFNY8N1GNDUQGoq9Szg5tUdRz0H+zTRBVmA95oqAhq+YtBfzanORZcOtzODHAu4KP/cgtduTus0Z6XPmxK8NS/95o0Sp5Z6275NygvUacinpTUiqyFj4jSn/R1wXvc51MsHoswR5aI57JN+n4BlyPhWfPr9jyHpj4tyxx85eqw/0kOu7AAAAABJRU5ErkJggg==');
+}
 .no-padding {
   padding: 0 !important;
 }
@@ -242,10 +247,10 @@ a:hover {
   h2 {
     font-weight: 600;
     font-size: 35px;
-    color: #474545;
+    color: #ece7e7;
   }
   p {
-    color: #848484;
+    color: #b1aeae;
     width: 50%;
     margin: 0 auto;
   }
@@ -264,7 +269,7 @@ a:hover {
 }
 
 .bg-gray {
-  background: #f9f9f9;
+  background: $color-background;
 }
 
 .header-bradcrumb {

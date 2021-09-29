@@ -21,6 +21,12 @@ h6 {
   font-weight: 600;
 }
 
+body {
+  color: white;
+  background-size: cover;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAAAXNSR0IArs4c6QAAAXpJREFUOE9tVFtuwzAMo+SdoMt+sx6lj/sfKdZASq6ddgaKuIpMiaQc2y/3cDMgGsIPAA0RAEMdAPgqH3Dwfe7MTDu+GysiYNfvZyAs89DR+azMsAaPDljAzCs+EhagnrDmBrteHqGKAA7v6mx00RGwyE643E212ZYe7P5Qls6p69/tEZmUwVf7Bcv4POALSRYKdHUXymFB2zd2mEtSshpTqMeoEC46lZUAFJq/V//JoABXHomcx7PyC8paRjvjA2rmSMNJebFLmAv/t/8h56b7YyfAfXtKpfKp1K5/qYFiHC2pJZrcDD1H4YC5nzVMHfPgqT8FzqPTo9MGFRz51eFNY8N1GNDUQGoq9Szg5tUdRz0H+zTRBVmA95oqAhq+YtBfzanORZcOtzODHAu4KP/cgtduTus0Z6XPmxK8NS/95o0Sp5Z6275NygvUacinpTUiqyFj4jSn/R1wXvc51MsHoswR5aI57JN+n4BlyPhWfPr9jyHpj4tyxx85eqw/0kOu7AAAAABJRU5ErkJggg==");
+}
+
 .no-padding {
   padding: 0 !important;
 }
@@ -262,10 +268,10 @@ a:hover {
 .title h2 {
   font-weight: 600;
   font-size: 35px;
-  color: #474545;
+  color: #ece7e7;
 }
 .title p {
-  color: #848484;
+  color: #b1aeae;
   width: 50%;
   margin: 0 auto;
 }
@@ -282,7 +288,7 @@ a:hover {
 }
 
 .bg-gray {
-  background: #f9f9f9;
+  background: #201244;
 }
 
 .header-bradcrumb {
@@ -772,7 +778,7 @@ a:hover {
 ==================================================================*/
 .about {
   padding: 100px 0;
-  background: #f7f7f8;
+  background: #201244;
 }
 .about .btn-about {
   background: #9c222c;
@@ -786,7 +792,7 @@ a:hover {
 .about .feature-list li {
   width: 48%;
   display: inline-block;
-  color: #666;
+  color: #bebec4;
   font-size: 13px;
   font-family: "Catamaran", sans-serif;
   margin-bottom: 5px;
@@ -800,9 +806,6 @@ a:hover {
 /*=================================================================
   About us 2 section
 ==================================================================*/
-.about-2 {
-  background: #F7F7F7;
-}
 .about-2 .checklist {
   padding-left: 30px;
 }
@@ -810,7 +813,7 @@ a:hover {
   position: relative;
   margin-bottom: 15px;
   font-size: 16px;
-  color: #777;
+  color: #d4d3d3;
   font-family: "Source Sans Pro", sans-serif;
 }
 .about-2 .checklist li:before {
@@ -976,7 +979,7 @@ a:hover {
 ==================================================================*/
 .counters-item {
   padding-bottom: 30px;
-  color: #444;
+  color: #e4e4e4;
   position: relative;
 }
 .counters-item.kill-border:before {
@@ -1009,7 +1012,7 @@ a:hover {
 .counters-item h3 {
   font-size: 18px;
   margin: 0;
-  color: #666;
+  color: #cec5c5;
 }
 
 /*=================================================================
@@ -1039,7 +1042,7 @@ a:hover {
 }
 .pricing-table .pricing-item {
   padding: 40px 55px 65px;
-  background: #f7f7f8;
+  background: rgba(32, 18, 68, 0.7);
   margin-bottom: 20px;
 }
 .pricing-table .pricing-item a.btn-main {
@@ -1049,10 +1052,8 @@ a:hover {
 .pricing-table .pricing-item li {
   font-weight: 400;
   padding: 10px 0;
-  color: #666;
-}
-.pricing-table .pricing-item li i {
-  margin-right: 6px;
+  color: #bebec4 i;
+  color-margin-right: 6px;
 }
 .pricing-table .price-title {
   padding: 30px 0 20px;
@@ -1172,14 +1173,14 @@ a:hover {
   color: #9c222c;
 }
 .services .service-block h3 {
-  color: #333;
+  color: #f7f7f8;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
 }
 .services .service-block p {
   font-size: 14px;
-  color: #666;
+  color: #f7f7f8;
 }
 
 /*=================================================================
@@ -1296,12 +1297,15 @@ a:hover {
   ==================================================================*/
 .team {
   padding: 100px 0;
-  background: #F6F6F6;
+  background: #201244;
 }
 .team .team-member {
   background: #f7f7f8;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 .team .team-member .member-content {
+  background-color: white;
   padding: 25px 0;
 }
 .team .team-member .member-content h3 {
@@ -1399,7 +1403,7 @@ a:hover {
   background-image: linear-gradient(to right top, #131218, #191729, #1f1b3a, #261f4c, #2f225e, #4c2567, #68286d, #832a71, #a63a6a, #c05362, #d1715f, #da9162);
   position: relative;
   padding-bottom: 0px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 .testimonial:before {
   content: "";
@@ -1409,7 +1413,7 @@ a:hover {
   right: 0%;
   bottom: 0;
   height: 150px;
-  background-color: white;
+  background-color: #1e1442;
 }
 .testimonial .item i {
   font-size: 60px;
@@ -1874,14 +1878,14 @@ a:hover {
 
 .footer-bottom {
   text-align: center;
-  background-color: #131218;
+  background-color: #201244;
   border-top: 1px solid #2c2c2c;
   padding: 30px 0;
 }
 .footer-bottom h5 {
   font-size: 12px;
   line-height: 1;
-  color: #888888;
+  color: #c2bebe;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1891,14 +1895,16 @@ a:hover {
 .footer-bottom h6 {
   font-size: 11px;
   line-height: 15px;
-  color: #888888;
+  color: #bdbdbd;
   font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 2px;
   margin-bottom: 0;
 }
 .footer-bottom a {
-  color: #9c222c;
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #d88a61;
 }
 
 .page-404 {
@@ -1940,7 +1946,7 @@ a:hover {
   }
 
   .mask ul {
-    top: 85px;
+    /*  top: 85px; */
   }
 
   .mask ul li {
@@ -2186,7 +2192,8 @@ a:hover {
   }
 
   /* footer */
-  .social-icon ul li, .social-icon ul li:first-child {
+  .social-icon ul li,
+.social-icon ul li:first-child {
     margin: 15px;
   }
 

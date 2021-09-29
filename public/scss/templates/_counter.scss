@@ -4,7 +4,7 @@
 
 .counters-item {
   padding-bottom: 30px;
-  color: #444;
+  color: rgb(228, 228, 228);
   position: relative;
   &.kill-border:before {
     background: none;
@@ -36,6 +36,6 @@
   h3 {
     font-size: 18px;
     margin: 0;
-    color: #666;
+    color: rgb(206, 197, 197);
   }
 }
