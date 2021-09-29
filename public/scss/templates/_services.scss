@@ -6,10 +6,26 @@
   padding: 100px 0 130px;
   .service-block {
     &.color-bg {
-      background:$primary-color;
-      color:$light;
-      i,h3,p {
-        color:$light;
+      background-image: linear-gradient(
+        to right top,
+        #131218,
+        #191729,
+        #1f1b3a,
+        #261f4c,
+        #2f225e,
+        #4c2567,
+        #68286d,
+        #832a71,
+        #a63a6a,
+        #c05362,
+        #d1715f,
+        #da9162
+      );
+      color: $light;
+      i,
+      h3,
+      p {
+        color: $light;
       }
     }
     .service-icon {
@@ -20,7 +36,7 @@
       color: $primary-color;
     }
     h3 {
-      color:#333;
+      color: #333;
       font-size: 18px;
       text-transform: uppercase;
       font-weight: bold;
@@ -31,7 +47,6 @@
     }
   }
 }
-
 
 /*=================================================================
   Services section 2
@@ -50,12 +65,26 @@
     }
     &:hover i {
       background: $light;
-      color:$primary-color;
+      color: $primary-color;
     }
     i {
       font-size: 30px;
       display: inline-block;
-      background: $primary-color none repeat scroll 0 0;
+      background-image: linear-gradient(
+        to right,
+        #64208f,
+        #771b82,
+        #841a75,
+        #8d1e69,
+        #92265f,
+        #982a59,
+        #9e2e54,
+        #a2344e,
+        #ab3648,
+        #b43941,
+        #bb3d39,
+        #c0432f
+      );
       border-radius: 30px;
       box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
       color: #fff;

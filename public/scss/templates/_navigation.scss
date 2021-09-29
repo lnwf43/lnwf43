@@ -3,7 +3,8 @@
 ==================================================================*/
 .navigation {
   transition: 0.3s all;
-
+  background-color: rgba(19, 18, 24, 0.5);
+  font-weight: bold;
   .logo-default {
     display: none;
   }
@@ -28,7 +29,7 @@
         &:active,
         &:focus {
           background: none;
-          color: $primary-color;
+          color: #bd442f;
         }
       }
 
@@ -137,7 +138,7 @@
 
 .sticky-header {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
-  background: $light;
+  background: rgba(239, 239, 240, 0.8);
 
   .navbar-light .navbar-nav {
     .nav-item {
