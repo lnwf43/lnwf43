@@ -351,8 +351,9 @@ Start About Section
                 <h5 class="detalle-valor">/mes</h5>
                 <h5>durante 6 meses</h5>
                 <p>
-                  <div id="ecommerce-basic-3-meses"></div>/mes durante 3 meses<br />
-                  <div id="ecommerce-basic-contado"></div> al contado
+                  <span id="ecommerce-basic-3-meses"></span>/mes durante 3
+                  meses<br />
+                  <span id="ecommerce-basic-contado"></span> al contado
                 </p>
               </div>
               <!-- /plan name & value -->
@@ -425,8 +426,9 @@ Start About Section
                 <h5 class="detalle-valor">/mes</h5>
                 <h5>durante 6 meses</h5>
                 <p>
-                  <div id="ecommerce-standard-3-meses"></div>/mes durante 3 meses<br />
-                  <div id="ecommerce-standard-contado"></div> al contado
+                  <span id="ecommerce-standard-3-meses"></span>/mes durante 3
+                  meses<br />
+                  <span id="ecommerce-standard-contado"></span> al contado
                 </p>
               </div>
               <!-- /plan name & value -->
@@ -499,8 +501,9 @@ Start About Section
                 <h5 class="detalle-valor">/mes</h5>
                 <h5>durante 6 meses</h5>
                 <p>
-                  <div id="ecommerce-complete-3-meses"></div>/mes durante 3 meses<br />
-                  <div id="ecommerce-complete-contado"></div> al contado
+                  <span id="ecommerce-complete-3-meses"></span>/mes durante 3
+                  meses<br />
+                  <span id="ecommerce-complete-contado"></span> al contado
                 </p>
               </div>
               <!-- /plan name & value -->
@@ -673,37 +676,53 @@ Start About Section
       getLocation()
         .then((r) => {
           if (r === 'BO') {
-            
             // Plan Ecommerce Basico
-            document.getElementById("ecommerce-basic-6-meses").innerHTML = "Bs.40"
-            document.getElementById("ecommerce-basic-3-meses").innerHTML = "Bs.30"
-            document.getElementById("ecommerce-basic-contado").innerHTML = "Bs.20"
-            
-            // Plan Ecommerce standard
-            document.getElementById("ecommerce-standard-6-meses").innerHTML = "Bs.20"
-            document.getElementById("ecommerce-standard-3-meses").innerHTML = "Bs.20"
-            document.getElementById("ecommerce-standard-contado").innerHTML = "Bs.20"
-            
-            // Plan Ecommerce complete
-            document.getElementById("ecommerce-complete-6-meses").innerHTML = "Bs.20"
-            document.getElementById("ecommerce-complete-3-meses").innerHTML = "Bs.20"
-            document.getElementById("ecommerce-complete-contado").innerHTML = "Bs.20"
+            document.getElementById('ecommerce-basic-6-meses').innerHTML =
+              'Bs.570';
+            document.getElementById('ecommerce-basic-3-meses').innerHTML =
+              'Bs.1100';
+            document.getElementById('ecommerce-basic-contado').innerHTML =
+              'Bs.3180';
 
+            // Plan Ecommerce standard
+            document.getElementById('ecommerce-standard-6-meses').innerHTML =
+              'Bs.670';
+            document.getElementById('ecommerce-standard-3-meses').innerHTML =
+              'Bs.1300';
+            document.getElementById('ecommerce-standard-contado').innerHTML =
+              'Bs.3780';
+
+            // Plan Ecommerce complete
+            document.getElementById('ecommerce-complete-6-meses').innerHTML =
+              'Bs.770';
+            document.getElementById('ecommerce-complete-3-meses').innerHTML =
+              'Bs.1500';
+            document.getElementById('ecommerce-complete-contado').innerHTML =
+              'Bs.4380';
           } else {
             // Plan Ecommerce Basico
-            document.getElementById("ecommerce-basic-6-meses").innerHTML = "$40"
-            document.getElementById("ecommerce-basic-3-meses").innerHTML = "$30"
-            document.getElementById("ecommerce-basic-contado").innerHTML = "$20"
-            
+            document.getElementById('ecommerce-basic-6-meses').innerHTML =
+              '$40';
+            document.getElementById('ecommerce-basic-3-meses').innerHTML =
+              '$30';
+            document.getElementById('ecommerce-basic-contado').innerHTML =
+              '$20';
+
             // Plan Ecommerce standard
-            document.getElementById("ecommerce-standard-6-meses").innerHTML = "$80"
-            document.getElementById("ecommerce-standard-3-meses").innerHTML = "$80"
-            document.getElementById("ecommerce-standard-contado").innerHTML = "$80"
-            
+            document.getElementById('ecommerce-standard-6-meses').innerHTML =
+              '$80';
+            document.getElementById('ecommerce-standard-3-meses').innerHTML =
+              '$80';
+            document.getElementById('ecommerce-standard-contado').innerHTML =
+              '$80';
+
             // Plan Ecommerce complete
-            document.getElementById("ecommerce-complete-6-meses").innerHTML = "$80"
-            document.getElementById("ecommerce-complete-3-meses").innerHTML = "$80"
-            document.getElementById("ecommerce-complete-contado").innerHTML = "$80"
+            document.getElementById('ecommerce-complete-6-meses').innerHTML =
+              '$80';
+            document.getElementById('ecommerce-complete-3-meses').innerHTML =
+              '$80';
+            document.getElementById('ecommerce-complete-contado').innerHTML =
+              '$80';
           }
         })
         .catch((e) => console.log(e));
