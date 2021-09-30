@@ -91,11 +91,11 @@
         .dropdown-menu > li:hover > .submenu {
           display: block;
         }
- 
       }
 
-      .detalle-valor{ display:inline-block; }
-
+      .detalle-valor {
+        display: inline-block;
+      }
     </style>
   </head>
 
@@ -258,49 +258,32 @@ Start About Section
           <!-- section title -->
           <div class="col-12">
             <div class="title text-center">
-              <h2>
-                Ahora todos tus clientes están conectados
-              </h2>
+              <h2>Ahora todos tus clientes están conectados</h2>
               <p>
                 Tu tienda abierta las 24 horas, disponible para todo el mundo.
               </p>
-              <p>
-                Deja de esperar y prepárate para recibir clientes.
-              </p>
+              <p>Deja de esperar y prepárate para recibir clientes.</p>
               <div class="border"></div>
             </div>
           </div>
           <!-- /section title -->
 
           <div class="col-md-6">
-            <img src="images/about/ecommerce.jpg" class="img-fluid" alt=""/>
+            <img src="images/about/ecommerce.jpg" class="img-fluid" alt="" />
           </div>
           <div class="col-md-6">
             <ul class="checklist">
               <li>
-                Catálogo de productos con capacidad de hacer pedidos por WhatsApp
+                Catálogo de productos con capacidad de hacer pedidos por
+                WhatsApp
               </li>
-              <li>
-                Pagos por cuotas durante 3 y 6 meses
-              </li>
-              <li>
-                Promociones pagadas en Facebook Ads ¡GRATIS!
-              </li>
-              <li>
-                Soporte técnico durante 3 meses ¡GRATIS!
-              </li>
-              <li>
-                Hosting y Dominio por un año ¡GRATIS!
-              </li>
-              <li>
-                Creación de Fanpage en Facebook ¡GRATIS!
-              </li>
-              <li>
-                Asesoramiento de WhatsApp Business ¡GRATIS!
-              </li>
-              <li>
-                Diseño adaptable a cualquier dispositivo
-              </li>
+              <li>Pagos por cuotas durante 3 y 6 meses</li>
+              <li>Promociones pagadas en Facebook Ads ¡GRATIS!</li>
+              <li>Soporte técnico durante 3 meses ¡GRATIS!</li>
+              <li>Hosting y Dominio por un año ¡GRATIS!</li>
+              <li>Creación de Fanpage en Facebook ¡GRATIS!</li>
+              <li>Asesoramiento de WhatsApp Business ¡GRATIS!</li>
+              <li>Diseño adaptable a cualquier dispositivo</li>
             </ul>
             <a href="portfolio.html" class="btn btn-main mt-20">Portafólio</a>
           </div>
@@ -309,26 +292,31 @@ Start About Section
             <h4>Contenido:</h4>
             <ul class="feature-list">
               <li>
-                <i class="tf-ion-android-checkmark-circle"></i> Página de aterrizaje
+                <i class="tf-ion-android-checkmark-circle"></i> Página de
+                aterrizaje
               </li>
               <li>
-                <i class="tf-ion-android-checkmark-circle"></i> Catálogo de productos
+                <i class="tf-ion-android-checkmark-circle"></i> Catálogo de
+                productos
               </li>
               <li>
-                <i class="tf-ion-android-checkmark-circle"></i> Producto individual
+                <i class="tf-ion-android-checkmark-circle"></i> Producto
+                individual
               </li>
               <li>
-                <i class="tf-ion-android-checkmark-circle"></i> Páginas de Categorías
+                <i class="tf-ion-android-checkmark-circle"></i> Páginas de
+                Categorías
               </li>
               <li>
-                <i class="tf-ion-android-checkmark-circle"></i> Carrito de compras
+                <i class="tf-ion-android-checkmark-circle"></i> Carrito de
+                compras
               </li>
               <li>
-                <i class="tf-ion-android-checkmark-circle"></i> Pedidos por WhatsApp
+                <i class="tf-ion-android-checkmark-circle"></i> Pedidos por
+                WhatsApp
               </li>
             </ul>
           </div>
-
         </div>
         <!-- End row -->
       </div>
@@ -359,34 +347,69 @@ Start About Section
               <!-- plan name & value -->
               <div class="price-title">
                 <h3>E-commerce Basic</h3>
-                <strong class="value">Bs.570</strong><h5 class="detalle-valor" >/mes</h5>
+                <strong class="value" id="ecommerce-basic-6-meses"></strong>
+                <h5 class="detalle-valor">/mes</h5>
                 <h5>durante 6 meses</h5>
                 <p>
-                  Bs.1100/mes durante 3 meses<br>
-                  Bs.3180 al contado
+                  <div id="ecommerce-basic-3-meses"></div>/mes durante 3 meses<br />
+                  <div id="ecommerce-basic-contado"></div> al contado
                 </p>
-                
               </div>
               <!-- /plan name & value -->
 
               <!-- plan description -->
               <ul>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Almacenamiento de 5 GB </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Ancho de Banda 250 GB</li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Hosting y Dominio por un año GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> 4 Campañas en Facebook GRATIS</li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Soporte por 3 meses GRATIS</li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Fanpage en Facebook GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> WhatsApp Business GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Certificado SSL/TLS GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Correos corporativos </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Subida de 20 productos </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> 20 dias habiles para la entrega </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Almacenamiento de
+                  5 GB
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Ancho de Banda
+                  250 GB
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Hosting y Dominio
+                  por un año GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> 4 Campañas en
+                  Facebook GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Soporte por 3
+                  meses GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Fanpage en
+                  Facebook GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> WhatsApp Business
+                  GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Certificado
+                  SSL/TLS GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Correos
+                  corporativos
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Subida de 20
+                  productos
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> 20 dias habiles
+                  para la entrega
+                </li>
               </ul>
               <!-- /plan description -->
 
               <!-- signup button -->
-              <a class="btn btn-main" href="https://bit.ly/3F0DdN6">Consultar plan por WhatsApp</a>
+              <a class="btn btn-main" href="https://bit.ly/3F0DdN6"
+                >Consultar plan por WhatsApp</a
+              >
               <!-- /signup button -->
             </div>
           </div>
@@ -398,34 +421,69 @@ Start About Section
               <!-- plan name & value -->
               <div class="price-title">
                 <h3>E-commerce Standard</h3>
-                <strong class="value">Bs.670</strong><h5 class="detalle-valor">/mes</h5>
+                <strong class="value" id="ecommerce-standard-6-meses"></strong>
+                <h5 class="detalle-valor">/mes</h5>
                 <h5>durante 6 meses</h5>
                 <p>
-                  Bs.1300/mes durante 3 meses<br>
-                  Bs.3780 al contado
+                  <div id="ecommerce-standard-3-meses"></div>/mes durante 3 meses<br />
+                  <div id="ecommerce-standard-contado"></div> al contado
                 </p>
-                
               </div>
               <!-- /plan name & value -->
 
               <!-- plan description -->
               <ul>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Almacenamiento de 10 GB </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Ancho de Banda 500 GB</li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Hosting y Dominio por un año GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> 6 Campañas en Facebook GRATIS</li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Soporte por 3 meses GRATIS</li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Fanpage en Facebook GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> WhatsApp Business GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Certificado SSL/TLS GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Correos corporativos </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Subida de 20 productos </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> 20 dias habiles para la entrega </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Almacenamiento de
+                  10 GB
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Ancho de Banda
+                  500 GB
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Hosting y Dominio
+                  por un año GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> 6 Campañas en
+                  Facebook GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Soporte por 3
+                  meses GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Fanpage en
+                  Facebook GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> WhatsApp Business
+                  GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Certificado
+                  SSL/TLS GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Correos
+                  corporativos
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Subida de 20
+                  productos
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> 20 dias habiles
+                  para la entrega
+                </li>
               </ul>
               <!-- /plan description -->
 
               <!-- signup button -->
-              <a class="btn btn-main" href="https://bit.ly/39LqHCZ">Consultar plan por WhatsApp</a>
+              <a class="btn btn-main" href="https://bit.ly/39LqHCZ"
+                >Consultar plan por WhatsApp</a
+              >
               <!-- /signup button -->
             </div>
           </div>
@@ -437,34 +495,69 @@ Start About Section
               <!-- plan name & value -->
               <div class="price-title">
                 <h3>E-commerce Complete</h3>
-                <strong class="value">Bs.770</strong><h5 class="detalle-valor" >/mes</h5>
+                <strong class="value" id="ecommerce-complete-6-meses"></strong>
+                <h5 class="detalle-valor">/mes</h5>
                 <h5>durante 6 meses</h5>
                 <p>
-                  Bs.1500/mes durante 3 meses<br>
-                  Bs.4380 al contado
+                  <div id="ecommerce-complete-3-meses"></div>/mes durante 3 meses<br />
+                  <div id="ecommerce-complete-contado"></div> al contado
                 </p>
-                
               </div>
               <!-- /plan name & value -->
 
               <!-- plan description -->
               <ul>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Almacenamiento de 15 GB </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Ancho de Banda 750 GB</li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Hosting y Dominio por un año GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> 8 Campañas en Facebook GRATIS</li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Soporte por 3 meses GRATIS</li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Fanpage en Facebook GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> WhatsApp Business GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Certificado SSL/TLS GRATIS </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Correos corporativos </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> Subida de 20 productos </li>
-                <li><i class="tf-ion-ios-checkmark-outline"></i> 20 dias habiles para la entrega </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Almacenamiento de
+                  15 GB
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Ancho de Banda
+                  750 GB
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Hosting y Dominio
+                  por un año GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> 8 Campañas en
+                  Facebook GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Soporte por 3
+                  meses GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Fanpage en
+                  Facebook GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> WhatsApp Business
+                  GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Certificado
+                  SSL/TLS GRATIS
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Correos
+                  corporativos
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> Subida de 20
+                  productos
+                </li>
+                <li>
+                  <i class="tf-ion-ios-checkmark-outline"></i> 20 dias habiles
+                  para la entrega
+                </li>
               </ul>
               <!-- /plan description -->
 
               <!-- signup button -->
-              <a class="btn btn-main" href="https://bit.ly/3kOml4p">Consultar plan por WhatsApp</a>
+              <a class="btn btn-main" href="https://bit.ly/3kOml4p"
+                >Consultar plan por WhatsApp</a
+              >
               <!-- /signup button -->
             </div>
           </div>
@@ -573,5 +666,47 @@ Start About Section
 
     <!-- Custom js -->
     <script src="js/script.js"></script>
+
+    <!-- For Pricing Internacionalization -->
+    <script src="./js/getLocation.js"></script>
+    <script>
+      getLocation()
+        .then((r) => {
+          if (r === 'BO') {
+            
+            // Plan Ecommerce Basico
+            document.getElementById("ecommerce-basic-6-meses").innerHTML = "Bs.40"
+            document.getElementById("ecommerce-basic-3-meses").innerHTML = "Bs.30"
+            document.getElementById("ecommerce-basic-contado").innerHTML = "Bs.20"
+            
+            // Plan Ecommerce standard
+            document.getElementById("ecommerce-standard-6-meses").innerHTML = "Bs.20"
+            document.getElementById("ecommerce-standard-3-meses").innerHTML = "Bs.20"
+            document.getElementById("ecommerce-standard-contado").innerHTML = "Bs.20"
+            
+            // Plan Ecommerce complete
+            document.getElementById("ecommerce-complete-6-meses").innerHTML = "Bs.20"
+            document.getElementById("ecommerce-complete-3-meses").innerHTML = "Bs.20"
+            document.getElementById("ecommerce-complete-contado").innerHTML = "Bs.20"
+
+          } else {
+            // Plan Ecommerce Basico
+            document.getElementById("ecommerce-basic-6-meses").innerHTML = "$40"
+            document.getElementById("ecommerce-basic-3-meses").innerHTML = "$30"
+            document.getElementById("ecommerce-basic-contado").innerHTML = "$20"
+            
+            // Plan Ecommerce standard
+            document.getElementById("ecommerce-standard-6-meses").innerHTML = "$80"
+            document.getElementById("ecommerce-standard-3-meses").innerHTML = "$80"
+            document.getElementById("ecommerce-standard-contado").innerHTML = "$80"
+            
+            // Plan Ecommerce complete
+            document.getElementById("ecommerce-complete-6-meses").innerHTML = "$80"
+            document.getElementById("ecommerce-complete-3-meses").innerHTML = "$80"
+            document.getElementById("ecommerce-complete-contado").innerHTML = "$80"
+          }
+        })
+        .catch((e) => console.log(e));
+    </script>
   </body>
 </html>
