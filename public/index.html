@@ -14,7 +14,7 @@
 
     <meta name="author" content="Themefisher.com" />
 
-    <title> Digital Hook | Desarrollo Web y Marketing </title>
+    <title>Digital Hook | Desarrollo Web y Marketing</title>
 
     <!-- Mobile Specific Meta
   ================================================== -->
@@ -330,7 +330,7 @@ Start About Section
           </div>
 
           <div class="col-md-4 text-center">
-            <img src="images/about/member.png" class="inline-block" alt="" />
+            <img src="images/about/member1.png" class="inline-block" alt="" />
           </div>
           <div class="col-md-8">
             <div class="row text-center">
@@ -723,26 +723,6 @@ Start Call To Action
 
     <!-- Custom js -->
     <script src="js/script.js"></script>
-
-    <!-- Multi Dropdown menu -->
-    <script>
-      // Prevent closing from click inside dropdown
-      $(document).on('click', '.dropdown-menu', function (e) {
-        e.stopPropagation();
-      });
-
-      // make it as accordion for smaller screens
-      if ($(window).width() < 992) {
-        $('.dropdown-menu a').click(function (e) {
-          //e.preventDefault();
-          if ($(this).next('.submenu').length) {
-            $(this).next('.submenu').toggle();
-          }
-          $('.dropdown').on('hide.bs.dropdown', function () {
-            $(this).find('.submenu').hide();
-          });
-        });
-      }
-    </script>
+    <script src="js/multiDropdown.js"></script>
   </body>
 </html>
