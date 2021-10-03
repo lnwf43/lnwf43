@@ -369,13 +369,14 @@ Start About Section
               <!-- plan name & value -->
               <div class="price-title">
                 <h3>Business Starter</h3>
-                <strong class="value">Bs.350</strong><h5 class="detalle-valor" >/mes</h5>
+                <strong class="value" id="business-starter-6-meses"></strong>
+                <h5 class="detalle-valor" >/mes</h5>
                 <h5>durante 6 meses</h5>
                 <p>
-                  Bs.660/mes durante 3 meses<br>
-                  Bs.1880 al contado
-                </p>
-                
+                  <span id="business-starter-3-meses"></span>/mes durante 3
+                  meses<br />
+                  <span id="business-starter-contado"></span> al contado
+                </p>                
               </div>
               <!-- /plan name & value -->
 
@@ -407,14 +408,16 @@ Start About Section
               <!-- plan name & value -->
               <div class="price-title">
                 <h3>Business Professional</h3>
-                <strong class="value">Bs.400</strong><h5 class="detalle-valor" >/mes</h5>
+                <strong class="value" id="business-professional-6-meses"></strong>
+                <h5 class="detalle-valor" >/mes</h5>
                 <h5>durante 6 meses</h5>
                 <p>
-                  Bs.760/mes durante 3 meses<br>
-                  Bs.2180 al contado
+                  <span id="business-professional-3-meses"></span>/mes durante 3
+                  meses<br />
+                  <span id="business-professional-contado"></span> al contado
                 </p>
-                
               </div>
+
               <!-- /plan name & value -->
 
               <!-- plan description -->
@@ -445,13 +448,14 @@ Start About Section
               <!-- plan name & value -->
               <div class="price-title">
                 <h3>Business Corporate</h3>
-                <strong class="value">Bs.450</strong><h5 class="detalle-valor" >/mes</h5>
+                <strong class="value" id="business-corporate-6-meses"></strong>
+                <h5 class="detalle-valor" >/mes</h5>
                 <h5>durante 6 meses</h5>
                 <p>
-                  Bs.860/mes durante 3 meses<br>
-                  Bs.2480 al contado
+                  <span id="business-corporate-3-meses"></span>/mes durante 3
+                  meses<br />
+                  <span id="business-corporate-contado"></span> al contado
                 </p>
-                
               </div>
               <!-- /plan name & value -->
 
@@ -581,5 +585,64 @@ Start About Section
     <!-- Custom js -->
     <script src="js/script.js"></script>
     <script src="js/multiDropdown.js"></script>
+
+    <!-- For Pricing Internacionalization -->
+    <script src="./js/getLocation.js"></script>
+    <script>
+      getLocation()
+        .then((r) => {
+          if (r === 'BO') {
+            // Plan Business Starter
+            document.getElementById('business-starter-6-meses').innerHTML =
+              'Bs.350';
+            document.getElementById('business-starter-3-meses').innerHTML =
+              'Bs.660';
+            document.getElementById('business-starter-contado').innerHTML =
+              'Bs.1880';
+
+            // Plan Business Professional
+            document.getElementById('business-professional-6-meses').innerHTML =
+              'Bs.400';
+            document.getElementById('business-professional-3-meses').innerHTML =
+              'Bs.760';
+            document.getElementById('business-professional-contado').innerHTML =
+              'Bs.2180';
+
+            // Plan Business Corporate
+            document.getElementById('business-corporate-6-meses').innerHTML =
+              'Bs.450';
+            document.getElementById('business-corporate-3-meses').innerHTML =
+              'Bs.860';
+            document.getElementById('business-corporate-contado').innerHTML =
+              'Bs.2480';
+          } else {
+            // Plan Business Starter
+            document.getElementById('business-starter-6-meses').innerHTML =
+              '$50';
+            document.getElementById('business-starter-3-meses').innerHTML =
+              '$96';
+            document.getElementById('business-starter-contado').innerHTML =
+              '$276';
+
+            // Plan Business Professional
+            document.getElementById('business-professional-6-meses').innerHTML =
+              '$58';
+            document.getElementById('business-professional-3-meses').innerHTML =
+              '$110';
+            document.getElementById('business-professional-contado').innerHTML =
+              '$318';
+
+            // Plan Business Corporate
+            document.getElementById('business-corporate-6-meses').innerHTML =
+              '$65';
+            document.getElementById('business-corporate-3-meses').innerHTML =
+              '$125';
+            document.getElementById('business-corporate-contado').innerHTML =
+              '$362';
+          }
+        })
+        .catch((e) => console.log(e));
+    </script>
+
   </body>
 </html>

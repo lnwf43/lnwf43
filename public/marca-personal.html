@@ -375,10 +375,11 @@ Start About Section
               <!-- plan name & value -->
               <div class="price-title">
                 <h3>Brand Starter</h3>
-                <strong class="value">Bs.380</strong><h5 class="detalle-valor" >/mes</h5>
+                <strong class="value" id="brand-starter-4-meses"></strong>
+                <h5 class="detalle-valor" >/mes</h5>
                 <h5>durante 4 meses</h5>
                 <p>
-                  Bs.1380 al contado
+                  <span id="brand-starter-contado"></span> al contado
                 </p>
                 
               </div>
@@ -412,10 +413,11 @@ Start About Section
               <!-- plan name & value -->
               <div class="price-title">
                 <h3>Brand Professional</h3>
-                <strong class="value">Bs.450</strong><h5 class="detalle-valor" >/mes</h5>
+                <strong class="value" id="brand-professional-4-meses"></strong>
+                <h5 class="detalle-valor">/mes</h5>
                 <h5>durante 4 meses</h5>
                 <p>
-                  Bs.1680 al contado
+                  <span id="brand-professional-contado"></span> al contado
                 </p>
                 
               </div>
@@ -449,10 +451,11 @@ Start About Section
               <!-- plan name & value -->
               <div class="price-title">
                 <h3>Brand Professional Plus</h3>
-                <strong class="value">Bs.530</strong><h5 class="detalle-valor" >/mes</h5>
+                <strong class="value" id="brand-professional-plus-4-meses"></strong>
+                <h5 class="detalle-valor" >/mes</h5>
                 <h5>durante 4 meses</h5>
                 <p>
-                  Bs.1980 al contado
+                  <span id="brand-professional-plus-contado"></span> al contado
                 </p>
                 
               </div>
@@ -584,5 +587,52 @@ Start About Section
     <!-- Custom js -->
     <script src="js/script.js"></script>
     <script src="js/multiDropdown.js"></script>
+
+    <!-- For Pricing Internacionalization -->
+    <script src="./js/getLocation.js"></script>
+    <script>
+      getLocation()
+        .then((r) => {
+          if (r === 'BO') {
+            // Plan Brand Starter
+            document.getElementById('brand-starter-4-meses').innerHTML =
+              'Bs.280';
+            document.getElementById('brand-starter-contado').innerHTML =
+              'Bs.980';
+
+            // Plan Brand Professional
+            document.getElementById('brand-professional-4-meses').innerHTML =
+              'Bs.350';
+            document.getElementById('brand-professional-contado').innerHTML =
+              'Bs.1280';
+
+            // Plan Brand Professional Plus
+            document.getElementById('brand-professional-plus-4-meses').innerHTML =
+              'Bs.430';
+            document.getElementById('brand-professional-plus-contado').innerHTML =
+              'Bs.1580';
+          } else {
+            // Plan Brand Starter
+            document.getElementById('brand-starter-4-meses').innerHTML =
+              '$40';
+            document.getElementById('brand-starter-contado').innerHTML =
+              '$145';
+
+            // Plan Brand Professional
+            document.getElementById('brand-professional-4-meses').innerHTML =
+              '$50';
+            document.getElementById('brand-professional-contado').innerHTML =
+              '$188';
+
+            // Plan Brand Professional Plus
+            document.getElementById('brand-professional-plus-4-meses').innerHTML =
+              '$62';
+            document.getElementById('brand-professional-plus-contado').innerHTML =
+              '$232';
+          }
+        })
+        .catch((e) => console.log(e));
+    </script>
+
   </body>
 </html>
